@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý danh sách sinh viên</title>
+    <link rel="stylesheet" href="./baitap05.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Quản lý danh sách sinh viên</h2>
+
+      <div class="form">
+        <div class="row row-1">
+          <input type="text" id="name" placeholder="Tên sinh viên" />
+          <input type="number" id="age" placeholder="Tuổi" />
+        </div>
+        <div class="row row-2">
+          <input type="text" id="class" placeholder="Lớp" />
+          <button id="addBtn">Thêm sinh viên</button>
+        </div>
+      </div>
+
+      <div class="search">
+        <input type="text" id="search" placeholder="Tìm kiếm sinh viên..." />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Lớp</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="studentList"></tbody>
+      </table>
+    </div>
+
+    <script src="./baitap05.js"></script>
+  </body>
+</html>
